@@ -19,7 +19,7 @@ const reviews = [
     name: "DreamAlt",
     username: "@dreamingwithyou",
     body: "Sei lá '-' Como instalar",
-    img: "/pfps/dreamingwithyou",
+    img: "/pfps/dreamingwithyou.png",
   },
   {
     name: "Rhyan58",
