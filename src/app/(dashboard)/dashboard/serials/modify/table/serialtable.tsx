@@ -94,7 +94,7 @@ export function SerialDataTable({
       },
       {
         accessorKey: "serial",
-        header: "mspaint serial",
+        header: "msdoors serial",
       },
       {
         accessorKey: "lrm_serial",
