@@ -13,6 +13,6 @@ export default function robots(): MetadataRoute.Robots {
         '/purchase'
       ],
     },
-    sitemap: 'https://www.mspaint.cc/sitemap.xml',
+    sitemap: 'https://msdoors-gg.vercel.app/sitemap.xml',
   }
 }
