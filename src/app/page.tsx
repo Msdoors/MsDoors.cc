@@ -147,7 +147,17 @@ export default async function Home() {
         />
       </div>
       
-
+      <div className="flex flex-col items-center mb-[35vh] text-center overflow-hidden max-h-[30rem] relative">
+        <WordFadeIn className="text-3xl md:text-3xl" words={`Msdoors está disponível no mundo todo!`} inView />
+        <BlurFade delay={0.2 + (1 * 0.05)} inView>
+          <WordFadeIn className="text-xl md:text-xl font-normal" words={`Isao significa que pode ser executado em qualquer lugar!`} inView initialDelay={0.15 * 6} delay={0.25} />
+        </BlurFade>
+        <BlurFade delay={0.2 + (2 * 0.05)} inView>
+          <Globe speed={0.35} />
+        </BlurFade>
+        <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-[#0a0a0a] via-black to-transparent w-full pointer-events-none" />
+      </div>
+      
       <div className="flex flex-col items-center justify-center px-2 text-center">
         <BlurFade delay={0.2 + (1 * 0.05)} className="mb-5" inView>
           <h1 className="text-3xl font-bold text-center flex flex-col">
@@ -176,7 +186,7 @@ export default async function Home() {
 
         <BlurFade delay={0.2 + (1 * 0.05)} inView>
           <h1 className="text-2xl mt-[2.5rem] text-center">
-            Veja o que falam do Msdoors <span className="font-bold">mspaint</span>
+            Veja o que falam do  <span className="font-bold">Msdoors</span>
           </h1>
         </BlurFade>
 
