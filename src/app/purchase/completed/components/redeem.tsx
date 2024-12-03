@@ -30,9 +30,9 @@ export function RedeemComponent({serial, username, user_id}: {serial: string, us
             </AlertDialogTrigger>
             <AlertDialogContent className="bg-black">
                 <AlertDialogHeader>
-                    <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+                    <AlertDialogTitle>Você tem certeza absoluta?</AlertDialogTitle>
                     <AlertDialogDescription>
-                        This action cannot be undone. This will permanently redeem the mspaint key for {username}. We are not responsible for any lost keys.
+    Esta ação não pode ser desfeita. Isso resgatará permanentemente a chave msdoors para {username}.
                     </AlertDialogDescription>
                 </AlertDialogHeader>
 
@@ -47,17 +47,17 @@ export function RedeemComponent({serial, username, user_id}: {serial: string, us
 
                             return response;
                         }, {
-                            loading: "Redeeming lifetime mspaint key...",
+                            loading: "resgatando chave vitalícia do mspaint...",
                             success: (data) => {
                                 setOpen(false);
                                 
                                 router.push(`/purchase/claimed?key=${encodeURIComponent(data.user_key)}`);
 
-                                return "Key redeemed successfully for " + username + "! You can now access mspaint via #getscript in discord.";
+                                return "Chave resgatada com sucesso por " + username + "! Agora você pode acessar o msdoors via #getscript no discord.";
                             },
                             error: (error_data) => {
                                 setOpen(false);
-                                return "Failed to redeem key: " + error_data.message;
+                                return "Falha ao resgatar a chave: " + error_data.message;
                             }
                         });
                     }}>Continue</Button>
