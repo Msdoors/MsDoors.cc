@@ -1,6 +1,6 @@
 {
-    "name": "mspaint dashboard",
-    "short_name": "mspaint",
+    "name": "Msdoors DashBoard",
+    "short_name": "Msdoors",
     "icons": [
       {
         "src": "/icon.png",
