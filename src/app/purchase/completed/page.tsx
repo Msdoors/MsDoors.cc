@@ -45,8 +45,8 @@ export default async function Page({
                     <CardHeader>
                         <CardTitle>mspaint key purchase successful!</CardTitle>
                         <CardDescription>
-                            Thank you for your support! Only share this link if you are gifting the key to someone else <Link href={"/privacy"} target="_blank" className="text-blue-400 underline">(Privacy Policy)</Link>
-                        </CardDescription>
+                            Obrigado pelo seu apoio! Compartilhe este link somente se você estiver presenteando a chave para outra pessoa <     Obrigado pelo seu apoio! Compartilhe este link somente se você estiver presenteando a chave para outra pessoa <Link href={"/privacy"} target="_blank" className="text-blue-400 underline">(Política de Privacidade)</Link>
+       </CardDescription>
                     </CardHeader>
                     <CardContent>
                         {session && session.user ? (
@@ -63,7 +63,7 @@ export default async function Page({
                                             Logged in as {session.user.name}
                                         </p>
                                         <p className="text-muted-foreground text-sm">
-                                            Not you? Sign out.
+                                            Não é você? Saia aqui.
                                         </p>
                                     </div>
                                     <form action={async () => {
@@ -83,7 +83,7 @@ export default async function Page({
                                     await signIn("discord");
                                 }}>
                                     <Button>
-                                        Login with Discord
+                                        Entrar com Discord
                                     </Button>
                                 </form>
                             </>
@@ -100,17 +100,17 @@ export default async function Page({
             <main className="flex justify-center items-center flex-col h-screen">
                 <Card className="max-w-[475px]">
                     <CardHeader>
-                        <CardTitle>mspaint bulk keys purchase successful!</CardTitle>
+                        <CardTitle>Compra em massa de chaves do msdoors realizada com sucesso!</CardTitle>
                         <CardDescription>
-                            You have purchased multiple mspaint serials, to redeem them open the links below:
+                            Você comprou vários seriados do msdoors, para resgatá-los, abra os links abaixo:
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
                         <div className="flex flex-col mt-2 gap-2">
                             {serials.map((serial) => (
                                 <div className="flex flex-row items-center gap-2" key={serial}>
-                                    <Input readOnly value={process.env.NODE_ENV === "development" ? `http://localhost:3000/purchase/completed?serial=${serial}` : `https://www.mspaint.cc/purchase/completed?serial=${serial}`}/>
-                                    <CopyButton text={process.env.NODE_ENV === "development" ? `http://localhost:3000/purchase/completed?serial=${serial}` : `https://www.mspaint.cc/purchase/completed?serial=${serial}`} />
+                                    <Input readOnly value={process.env.NODE_ENV === "development" ? `http://localhost:3000/purchase/completed?serial=${serial}` : `https://msdoors-gg.vercel.app/purchase/completed?serial=${serial}`}/>
+                                    <CopyButton text={process.env.NODE_ENV === "development" ? `http://localhost:3000/purchase/completed?serial=${serial}` : `https://msdoors-gg.vercel.app/purchase/completed?serial=${serial}`} />
                                 </div>
                             ))}
                         </div>
