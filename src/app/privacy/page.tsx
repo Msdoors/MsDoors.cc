@@ -104,7 +104,7 @@ export default function Privacy(){
                 <p>Poderemos atualizar esta Política de Privacidade de tempos em tempos. Recomendamos que você reveja esta página periodicamente para quaisquer mudanças. Seu uso contínuo do nosso site após quaisquer alterações a esta Política de Privacidade constituirá sua aceitação de tais alterações.</p>
 
                 <p className="mt-5 font-bold">7. Contate-nos</p>
-                <p>Se você tiver quaisquer perguntas ou preocupações sobre esta Política de Privacidade, por favor nos contate em <a href="mailto:support@mspaint.dev">support@mspaint.dev</a>.</p>
+                <p>Se você tiver quaisquer perguntas ou preocupações sobre esta Política de Privacidade, por favor nos contate em <a href="mailto:msdoors.gg@gmail.com">support@mspaint.dev</a>.</p>
             </div>
         </main>
     )
