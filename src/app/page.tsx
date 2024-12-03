@@ -150,10 +150,10 @@ export default async function Home() {
       <div className="flex flex-col items-center mb-[35vh] text-center overflow-hidden max-h-[30rem] relative">
         <WordFadeIn className="text-3xl md:text-3xl" words={`Msdoors é para o mundo todo!`} inView />
         <BlurFade delay={0.2 + (1 * 0.05)} inView>
-          <WordFadeIn className="text-xl md:text-xl font-normal" words={`Isso Significa jogue onde quiser quando quiser.`} inView initialDelay={0.15 * 6} delay={0.25} />
+          <WordFadeIn className="text-xl md:text-xl font-normal" words={`Use onde quiser quando quiser...`} inView initialDelay={0.15 * 6} delay={0.25} />
         </BlurFade>
         <BlurFade delay={0.2 + (2 * 0.05)} inView>
-          <Globe speed={0.25} />
+          <Globe speed={0.10} />
         </BlurFade>
         <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-[#0a0a0a] via-black to-transparent w-full pointer-events-none" />
       </div>
@@ -163,9 +163,8 @@ export default async function Home() {
           <h1 className="text-3xl font-bold text-center flex flex-col">
             <span>Usado por mais de <span className="font-bold"> pessoas{" "}
               <NumberTicker value={30} />
-              + e mais
             </span></span>
-            <span className="text-muted-foreground text-lg">Usado até mesmo por<span className="font-bold text-white">Você :D</span></span>
+            <span className="text-muted-foreground text-lg">Usado até mesmo por<span className="font-bold text-white"> Você :D</span></span>
           </h1>
         </BlurFade>
         <BlurFade delay={0.2 + (2 * 0.05)} inView>
@@ -186,7 +185,7 @@ export default async function Home() {
 
         <BlurFade delay={0.2 + (1 * 0.05)} inView>
           <h1 className="text-2xl mt-[2.5rem] text-center">
-            Here&apos;s what people say about <span className="font-bold">Msdoors</span>
+            Aqui está o que as pessoas dizem sobre <span className="font-bold">Msdoors</span>
           </h1>
         </BlurFade>
 
@@ -224,7 +223,7 @@ ${Object.keys(languageData).length - 1}
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>How do i use it?</AccordionTrigger>
+              <AccordionTrigger>Como eu posso usar?</AccordionTrigger>
               <AccordionContent>
                 Baixe um executor como <Link href={"https://deltaexploits.gg/"} target="_blank" className="text-blue-300 underline">Delta</Link> e execute o script.
               </AccordionContent>
@@ -251,7 +250,7 @@ ${Object.keys(languageData).length - 1}
             <Image alt="mspaint" src="/icon.png" width={25} height={25} />
             <div>
               <p className="text-xs text-left">Msdoors</p>
-              <p className="text-muted-foreground text-xs">Site made by upio and modified by rhyan57</p>
+              <p className="text-muted-foreground text-xs">modified by rhyan57</p>
             </div>
           </div>
           <p className="text-muted-foreground text-xs px-2 py-2 text-right max-md:text-center max-md:mt-5">
