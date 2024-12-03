@@ -13,13 +13,13 @@ export default function Page() {
         <main className="flex justify-center items-center w-screen h-screen">
             <Card>
                 <CardHeader>
-                    <CardTitle>mspaint - redeem serial</CardTitle>
+                    <CardTitle>Msdoors - resgatar serial</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <div className="flex flex-row gap-2">
-                        <Input placeholder="Enter key here..." value={key ?? ""} onChange={(event) => setKey(event.target.value)} className="text-[16px]" />
-                        <Link href={`https://www.mspaint.cc/purchase/completed?serial=${encodeURIComponent(key ?? "abc")}`}>
-                            <Button>Redeem Key</Button>
+                        <Input placeholder="Entre com a key aqui..." value={key ?? ""} onChange={(event) => setKey(event.target.value)} className="text-[16px]" />
+                        <Link href={`https://msdoors-gg.vercel.app/purchase/completed?serial=${encodeURIComponent(key ?? "abc")}`}>
+                            <Button>Resgatar Key</Button>
                         </Link>
                     </div>                    
                 </CardContent>
