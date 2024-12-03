@@ -203,9 +203,9 @@ export default async function Home() {
         <BlurFade delay={0.2 + (4 * 0.05)} inView>
           <Accordion type="single" collapsible className="max-w-[1000px] w-[50vw] max-md:w-[75vw]">
             <AccordionItem value="item-1">
-              <AccordionTrigger>How do i do the keysystem?</AccordionTrigger>
+              <AccordionTrigger>Eu posso ajudar no desenvolvimento e ajudar o MsDoors?</AccordionTrigger>
               <AccordionContent>
-                Não teremos sistema de key nunca!
+                COM CERTEZA! eu nem sei programar(eu uso chagpt) e aliás eu já estou tentando aprender. #DESCULPA
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
@@ -235,7 +235,7 @@ export default async function Home() {
             <AccordionItem value="item-6">
               <AccordionTrigger>Quais jogos são suportados?</AccordionTrigger>
               <AccordionContent>
-                Por enquanto o Madoors só suporta os seguintes jogos, DOORS, CAMPOS DE ARMAS[FFA], CARRINHO + CART PARA GIGANOOB, e alguns outros.
+                Por enquanto o Msdoors só suporta os seguintes jogos, DOORS, CAMPOS DE ARMAS[FFA], CARRINHO + CART PARA GIGANOOB, e alguns outros.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
