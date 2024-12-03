@@ -25,6 +25,12 @@ import WordFadeIn from "@/components/ui/word-fade-in";
 import { Globe } from "@/components/ui/globe";
 import { ShoppingBagIcon } from "lucide-react";
 
+export default async function Home() {
+  const response = await fetch("https://raw.githubusercontent.com/mspaint-cc/translations/refs/heads/main/Languages.json", {
+    next: { revalidate: 20 }
+  });
+  const languageData = await response.json();
+
   return (
     <main className="overflow-x-hidden">
       <DotPattern
@@ -51,7 +57,7 @@ import { ShoppingBagIcon } from "lucide-react";
                       )}
                     >
                       <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                        <ShoppingBagIcon className="mr-2" /><span>Obtenha o Msdoors</span>
+                        <ShoppingBagIcon className="mr-2" /><span>Obtenha Msdoors</span>
                         <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                       </AnimatedShinyText>
                     </div>
@@ -66,16 +72,16 @@ import { ShoppingBagIcon } from "lucide-react";
               </BlurFade>
               <BlurFade delay={0.2 + (3 * 0.05)}>
                 <div className="text-2xl flex flex-row justify-center items-center  gap-2">
-                  <span className="font-bold">Um Script para </span>{" "}
+                  <span className="font-bold">Um Script para</span>{" "}
                   <WordRotate
                     duration={1250}
                     words={[
                       "DOORS",
-                      "Natural Disaster",
-                      "Campo de Armas[FFA]",
-                      "Carrinho + Cart Para GigaNoob!.",
+                      "NATURAL DISASTER",
+                      "CAMPOS DE ARMAS[FFA]",
+                      "CARRINHO + CART PARA GIGANOOB",
                     ]}
-                  />{" "} 
+                  />{" "}
                 </div>
               </BlurFade>
               
@@ -97,7 +103,7 @@ import { ShoppingBagIcon } from "lucide-react";
             <>
               <BlurFade delay={0.2 + (1 * 0.05)} inView>
                 <h1 className="text-2xl font-bold mt-[5rem] text-center px-5">
-                 Com Suporte para seus executores favoritos!
+                  Suporta seus executores favoritos!
                 </h1>
               </BlurFade>
               <div className="flex flex-row items-center justify-center mt-5 gap-10 max-md:flex-col">
@@ -133,7 +139,7 @@ import { ShoppingBagIcon } from "lucide-react";
                 </Link>
               </div>
               <BlurFade delay={0.2 + (7 * 0.05)}  inView>
-                  <h4 className="text-muted-foreground text-sm mt-5">e outros...</h4>
+                  <h4 className="text-muted-foreground text-sm mt-5">E muito mais...</h4>
               </BlurFade>
             </>
           }
@@ -142,30 +148,30 @@ import { ShoppingBagIcon } from "lucide-react";
       </div>
       
       <div className="flex flex-col items-center mb-[35vh] text-center overflow-hidden max-h-[30rem] relative">
-        <WordFadeIn className="text-3xl md:text-3xl" words={`Msdoors está disponível para todo o mundo! `} inView />
+        <WordFadeIn className="text-3xl md:text-3xl" words={`Msdoors é para o mundo todo!`} inView />
         <BlurFade delay={0.2 + (1 * 0.05)} inView>
-          <WordFadeIn className="text-xl md:text-xl font-normal" words={`Isao significa que pode ser executado em qualquer lugar!`} inView initialDelay={0.15 * 6} delay={0.25} />
+          <WordFadeIn className="text-xl md:text-xl font-normal" words={`Isso Significa jogue onde quiser quando quiser.`} inView initialDelay={0.15 * 6} delay={0.25} />
         </BlurFade>
         <BlurFade delay={0.2 + (2 * 0.05)} inView>
-          <Globe speed={0.35} />
+          <Globe speed={0.25} />
         </BlurFade>
         <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-[#0a0a0a] via-black to-transparent w-full pointer-events-none" />
       </div>
-      
+
       <div className="flex flex-col items-center justify-center px-2 text-center">
         <BlurFade delay={0.2 + (1 * 0.05)} className="mb-5" inView>
           <h1 className="text-3xl font-bold text-center flex flex-col">
-            <span>Usado Por Mais de <span className="font-bold">over{" "}
+            <span>Usado por mais de <span className="font-bold"> pessoas{" "}
               <NumberTicker value={30} />
-              + pessoas
+              + e mais
             </span></span>
-            <span className="text-muted-foreground text-lg"> E <span className="font-bold text-white">Muito Mais...</span></span>
+            <span className="text-muted-foreground text-lg">Usado até mesmo por<span className="font-bold text-white">Você :D</span></span>
           </h1>
         </BlurFade>
         <BlurFade delay={0.2 + (2 * 0.05)} inView>
           <div className="max-md:hidden block">
             <div className="relative w-[90vw] flex justify-center items-center">
-              <Safari url="youtube.com" className="" src="/rhyan57.png" />
+              <Safari url="youtube.com" className="" src="/rhyan57_mobile.png" />
             </div>
           </div>
 
@@ -180,7 +186,7 @@ import { ShoppingBagIcon } from "lucide-react";
 
         <BlurFade delay={0.2 + (1 * 0.05)} inView>
           <h1 className="text-2xl mt-[2.5rem] text-center">
-            Veja o que falam do  <span className="font-bold">Msdoors</span>
+            Here&apos;s what people say about <span className="font-bold">Msdoors</span>
           </h1>
         </BlurFade>
 
@@ -192,45 +198,45 @@ import { ShoppingBagIcon } from "lucide-react";
           <h1 className="text-2xl font-bold  mt-[2.5rem] text-center">
             FAQ
           </h1>
-          <p className="text-muted-foreground">O resto das FAQs estão no Discord.</p>
+          <p className="text-muted-foreground">O FAQ completo está no Discord</p>
         </BlurFade>
 
         <BlurFade delay={0.2 + (4 * 0.05)} inView>
           <Accordion type="single" collapsible className="max-w-[1000px] w-[50vw] max-md:w-[75vw]">
             <AccordionItem value="item-1">
-              <AccordionTrigger>Eu posso ajudar e fazer scripts para o projeto?</AccordionTrigger>
+              <AccordionTrigger>How do i do the keysystem?</AccordionTrigger>
               <AccordionContent>
-             claro! entre no nosso <Link href={"https://dsc.gg/msdoors-gg"} target="_blank" className="text-blue-300 underline">Discord</Link> e vá na minha dm(@rhyan57).
+                Tutorial on how to use the Key System is here: <Link href={"https://docs.upio.dev/mspaint/key-system"} target="_blank" className="text-blue-300 underline">https://docs.upio.dev/mspaint/key-system</Link>.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>Where can I report bugs and suggest features?</AccordionTrigger>
+              <AccordionTrigger>Onde posso relatar bugs e sugerir recursos?</AccordionTrigger>
               <AccordionContent>
-              você pode reportar ou ajudar o projeto usando <Link href={"https://dsc.gg/msdoors-gg"} target="_blank" className="text-blue-300 underline">Discord</Link> ou nosso repositorio do github :D
+                Você pode relatar bugs e sugerir recursos no servidor <Link href={"https://dsc.gg/msdoors-gg"} target="_blank" className="text-blue-300 underline">Discord</Link> ou no repositório GitHub.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Funciona no celular?</AccordionTrigger>
+              <AccordionTrigger>Funciona em dispositivos móveis?</AccordionTrigger>
               <AccordionContent>
-                Sim. Msdoors funciona no celular.
+                Sim. O msdoors funciona em dispositivos móveis.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger>How do i use it?</AccordionTrigger>
               <AccordionContent>
-                Baixe um executor como <Link href={"https://deltaexploits.gg"} target="_blank" className="text-blue-300 underline">Discord</Link> e execute o script.
+                Baixe um executor como <Link href={"https://deltaexploits.gg/"} target="_blank" className="text-blue-300 underline">Delta</Link> e execute o script.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>Como Posso fechar o Hub/GUI?</AccordionTrigger>
+              <AccordionTrigger>Não consigo fechar a GUI?</AccordionTrigger>
               <AccordionContent>
-                Feche a GUI pressionando no X ao lado direito do HUB.
+                Feche a GUI pressionando o botão X na Gui da OrionLib.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-6">
-              <AccordionTrigger>Quais Jogos são suportados?</AccordionTrigger>
+              <AccordionTrigger>Quais jogos são suportados?</AccordionTrigger>
               <AccordionContent>
-                No momento, DOORS, Campos de Armas[FFA], Natural disaster, Carrinho + Cart Para GigaNoob são suportados.
+                por agora ele só funciona para os seguintes jogos, DOORS, CAMPOS DE ARMAS[FFA], CARRINHO + CART PARA GIGANOOB, e alguns outros.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -242,14 +248,12 @@ import { ShoppingBagIcon } from "lucide-react";
           <div className="px-2 py-2 flex flex-row items-center gap-2">
             <Image alt="mspaint" src="/icon.png" width={25} height={25} />
             <div>
-              <p className="text-xs text-left">msdoors</p>
+              <p className="text-xs text-left">Msdoors</p>
               <p className="text-muted-foreground text-xs">Site made by upio and modified by rhyan57</p>
             </div>
           </div>
           <p className="text-muted-foreground text-xs px-2 py-2 text-right max-md:text-center max-md:mt-5">
-            Este software não é afiliado, associado, autorizado, endossado por ou<br />
-            de qualquer forma oficialmente conectada com Roblox ou Microsoft
-ou qualquer uma de suas subsidiárias ou afiliadas.</p>
+          Msdoors não é afilado endosado ou feito pela equipe<br />Mspaint.cc!</p>
         </div>
       </div>
     </main>
