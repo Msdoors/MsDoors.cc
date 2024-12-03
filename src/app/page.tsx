@@ -51,7 +51,7 @@ import { ShoppingBagIcon } from "lucide-react";
                       )}
                     >
                       <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                        <ShoppingBagIcon className="mr-2" /><span>Pegue o Msdoors de graça!</span>
+                        <ShoppingBagIcon className="mr-2" /><span>Obtenha o Msdoors</span>
                         <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                       </AnimatedShinyText>
                     </div>
@@ -61,7 +61,7 @@ import { ShoppingBagIcon } from "lucide-react";
 
               <BlurFade delay={0.2 + (2 * 0.05)}>
                 <h1 className="text-6xl font-bold text-center">
-                  mspaint
+                  Msdoors
                 </h1>
               </BlurFade>
               <BlurFade delay={0.2 + (3 * 0.05)}>
@@ -97,7 +97,7 @@ import { ShoppingBagIcon } from "lucide-react";
             <>
               <BlurFade delay={0.2 + (1 * 0.05)} inView>
                 <h1 className="text-2xl font-bold mt-[5rem] text-center px-5">
-                  Supporting your favorite executors
+                 Com Suporte para seus executores favoritos!
                 </h1>
               </BlurFade>
               <div className="flex flex-row items-center justify-center mt-5 gap-10 max-md:flex-col">
