@@ -49,7 +49,7 @@ export default async function Home() {
           title={
             <div className="flex flex-col items-center justify-center">
               <BlurFade delay={0.2 + (1 * 0.05)}>
-                <Link href={"https://msdoors-gg.vercel.app/"} target="_blank">
+                <Link href={"https://dsc.gg/msdoors-gg"} target="_blank">
                   <div className="flex mb-2">
                     <div
                       className={cn(
@@ -72,16 +72,16 @@ export default async function Home() {
               </BlurFade>
               <BlurFade delay={0.2 + (3 * 0.05)}>
                 <div className="text-2xl flex flex-row justify-center items-center  gap-2">
-                  <span className="font-bold">The best</span>{" "}
+                  <span className="font-bold">Um Script para </span>{" "}
                   <WordRotate
                     duration={1250}
                     words={[
                       "DOORS",
                       "Natural Disaster",
                       "Campo de Armas[FFA]",
-                      "E MUITO MAIS...",
+                      "Carrinho + Cart Para GigaNoob!.",
                     ]}
-                  />{" "} script
+                  />{" "} 
                 </div>
               </BlurFade>
               
@@ -147,25 +147,15 @@ export default async function Home() {
         />
       </div>
       
-      <div className="flex flex-col items-center mb-[35vh] text-center overflow-hidden max-h-[30rem] relative">
-        <WordFadeIn className="text-3xl md:text-3xl" words={`mspaint is translated in ${Object.keys(languageData).length - 1} languages`} inView />
-        <BlurFade delay={0.2 + (1 * 0.05)} inView>
-          <WordFadeIn className="text-xl md:text-xl font-normal" words={`that's less reading, and more playing.`} inView initialDelay={0.15 * 6} delay={0.25} />
-        </BlurFade>
-        <BlurFade delay={0.2 + (2 * 0.05)} inView>
-          <Globe speed={0.45} />
-        </BlurFade>
-        <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-[#0a0a0a] via-black to-transparent w-full pointer-events-none" />
-      </div>
 
       <div className="flex flex-col items-center justify-center px-2 text-center">
         <BlurFade delay={0.2 + (1 * 0.05)} className="mb-5" inView>
           <h1 className="text-3xl font-bold text-center flex flex-col">
-            <span>Used by <span className="font-bold">over{" "}
-              <NumberTicker value={9000} />
-              + people
+            <span>Usado Por Mais de <span className="font-bold">over{" "}
+              <NumberTicker value={30} />
+              + pessoas
             </span></span>
-            <span className="text-muted-foreground text-lg">And even by <span className="font-bold text-white">Kardin Hong</span></span>
+            <span className="text-muted-foreground text-lg"> E <span className="font-bold text-white">Muito Mais...</span></span>
           </h1>
         </BlurFade>
         <BlurFade delay={0.2 + (2 * 0.05)} inView>
