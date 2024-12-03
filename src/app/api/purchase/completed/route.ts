@@ -21,7 +21,7 @@ async function getIp(headersList: Headers, request: NextRequest) {
     const cloudflareIP = headersList.get("cf-connecting-ip");
     if (cloudflareIP) return cloudflareIP;
 
-    const mspaintIP = headersList.get("x-mspaint-ip");
+    const mspaintIP = headersList.get("x-msdoors-ip");
     if (mspaintIP && mspaintIP !== "") return mspaintIP;
 
     const vercelIP = ipAddress(request);
@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
             createdSerials.push(serial);
         }
         
-        return new Response(`Thank you for purchasing ${data.quantity} mspaint key(s)!\nYou can redeem your serial(s) at https://www.mspaint.cc/purchase/completed?serial=${encodeURIComponent(createdSerials.join(","))}\n\nMake sure to keep this link safe, as it is the only way to redeem your key(s).`);
+        return new Response(`Obrigado por adquirir ${data.quantity} chaves msdoors!\nVocê pode resgatar suas séries em https://msdoors-gg.vercel.app/purchase/completed?serial=${encodeURIComponent(createdSerials.join(","))}\n\nCertifique-se de`);
     } else {
         return new Response("Invalid signature");
     }
@@ -69,7 +69,7 @@ export async function GET(request: NextRequest) {
     if (isDev ? false : !request_ip) {
         return NextResponse.json({
             status: 400,
-            error: "bad request (ip not found), please contact support (https://discord.gg/Q6gHakV36z)"
+            error: "solicitação incorreta (ip não encontrado), entre em contato com o suporte (https://dsc.gg/msdoors-gg)"
         })
     }
 
@@ -79,7 +79,7 @@ export async function GET(request: NextRequest) {
     if (!order_id || !order_email) {
         return NextResponse.json({
             status: 400,
-            error: "bad request, please contact support (https://discord.gg/Q6gHakV36z)"
+            error: "solicitação incorreta, entre em contato com o suporte (https://dsc.gg/msdoors-gg)"
         })
     }
 
@@ -102,7 +102,7 @@ export async function GET(request: NextRequest) {
     if (!response.ok) {
         return NextResponse.json({
             status: 500,
-            error: "internal server error, please contact support (https://discord.gg/Q6gHakV36z)"
+            error: "erro interno do servidor, entre em contato com o suporte (https://dsc.gg/msdoors-gg)"
         })
     }
 
@@ -113,11 +113,11 @@ export async function GET(request: NextRequest) {
     if (invoiceData.customer_information.email !== order_email || invoiceData.status.status.status !== "COMPLETED" || (!isDev && invoiceData.customer_information.ip !== request_ip)) {
         return NextResponse.json({
             status: 400,
-            error: "bad request (data mismatch), please contact support (https://discord.gg/Q6gHakV36z)"
+            error: "solicitação incorreta (incompatibilidade de dados), entre em contato com o suporte (https://dsc.gg/msdoors-gg)"
         })
     }
 
-    await sql`CREATE TABLE IF NOT EXISTS mspaint_keys ( serial TEXT PRIMARY KEY, order_id TEXT NOT NULL, claimed BOOL, claimed_discord_id TEXT, lrm_serial TEXT );`
+    await sql`CREATE TABLE IF NOT EXISTS msdoors_keys ( serial TEXT PRIMARY KEY, order_id TEXT NOT NULL, claimed BOOL, claimed_discord_id TEXT, lrm_serial TEXT );`
     const { rows } = await sql`SELECT * FROM mspaint_keys WHERE order_id = ${order_id};`
 
     let claimedCount = 0;
@@ -133,6 +133,6 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json({
         status: 400,
-        error: "bad request (all keys claimed), please contact support (https://discord.gg/Q6gHakV36z)"
+        error: "solicitação incorreta (todas as chaves reivindicadas), entre em contato com o suporte (https://dsc.gg/msdoors-gg)"
     })
 }
