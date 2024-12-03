@@ -6,14 +6,20 @@ const reviews = [
   {
     name: "Rhyan57",
     username: "@rhyan57",
-    body: 'Eu gostei, por que eu estou na página "Vejam o que as pessoas estão dizendo"?',
-    img: "/pfps/rhyan58.png",
+    body: 'O que eu estou fazendo aqui! OMG.',
+    img: "/pfps/rhyan57.png",
   },
   {
-    name: "seek",
+    name: "seekAlegriaFla",
     username: "@emanuelmiguel",
     body: "Eu Peguei a referência 😱😁",
     img: "/pfps/seek.png",
+  },
+  {
+    name: "DreamAlt",
+    username: "@dreamingwithyou",
+    body: "Sei lá '-' Como instalar",
+    img: "/pfps/dreamingwithyou",
   },
   {
     name: "Rhyan58",
