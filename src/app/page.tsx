@@ -79,7 +79,7 @@ export default async function Home() {
                       "DOORS",
                       "NATURAL DISASTER",
                       "CAMPOS DE ARMAS[FFA]",
-                      "CARRINHO + CART PARA GIGANOOB",
+                      "CARRINHO + CART",
                     ]}
                   />{" "}
                 </div>
@@ -200,8 +200,6 @@ export default async function Home() {
           <p className="text-muted-foreground">O FAQ completo está no Discord</p>
         </BlurFade>
         
-${Object.keys(languageData).length - 1}
-        
         <BlurFade delay={0.2 + (4 * 0.05)} inView>
           <Accordion type="single" collapsible className="max-w-[1000px] w-[50vw] max-md:w-[75vw]">
             <AccordionItem value="item-1">
@@ -229,7 +227,7 @@ ${Object.keys(languageData).length - 1}
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>Não consigo fechar a GUI?</AccordionTrigger>
+              <AccordionTrigger>Como podso fechar a GUI?</AccordionTrigger>
               <AccordionContent>
                 Feche a GUI pressionando o botão X na Gui da OrionLib.
               </AccordionContent>
@@ -237,7 +235,7 @@ ${Object.keys(languageData).length - 1}
             <AccordionItem value="item-6">
               <AccordionTrigger>Quais jogos são suportados?</AccordionTrigger>
               <AccordionContent>
-                por agora ele só funciona para os seguintes jogos, DOORS, CAMPOS DE ARMAS[FFA], CARRINHO + CART PARA GIGANOOB, e alguns outros.
+                Por enquanto o Madoors só suporta os seguintes jogos, DOORS, CAMPOS DE ARMAS[FFA], CARRINHO + CART PARA GIGANOOB, e alguns outros.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -255,6 +253,7 @@ ${Object.keys(languageData).length - 1}
           </div>
           <p className="text-muted-foreground text-xs px-2 py-2 text-right max-md:text-center max-md:mt-5">
           Msdoors não é afilado endosado ou feito pela equipe<br />Mspaint.cc!</p>
+          ${Object.keys(languageData).length - 1}
         </div>
       </div>
     </main>
