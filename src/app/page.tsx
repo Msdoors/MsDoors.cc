@@ -161,8 +161,8 @@ export default async function Home() {
       <div className="flex flex-col items-center justify-center px-2 text-center">
         <BlurFade delay={0.2 + (1 * 0.05)} className="mb-5" inView>
           <h1 className="text-3xl font-bold text-center flex flex-col">
-            <span>Usado por mais de <span className="font-bold"> {" "} pesoas!
-              <NumberTicker value={30} />
+            <span>Usado por mais de <span className="font-bold"> {" "}
+              <NumberTicker value={30} pessoas! />
             </span></span>
             <span className="text-muted-foreground text-lg">Usado até mesmo por<span className="font-bold text-white"> Você :D</span></span>
           </h1>
