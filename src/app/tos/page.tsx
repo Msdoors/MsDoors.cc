@@ -40,36 +40,36 @@ export default function TOS(){
             <div className="flex flex-col items-center justify-center px-2 ml-5 mr-5">
                 <BlurFade delay={0.2 + (1 * 0.05)} className="mt-5" inView>
                     <h1 className="text-3xl font-bold text-center flex flex-col">
-                        <strong>mspaint Terms of Service</strong>
+                        <strong>Termos de Serviço MsDoors</strong>
                     </h1>
                 </BlurFade>
 
                 <BlurFade delay={0.4 + (1 * 0.05)} className="mb-5 mt-2" inView>
-                    <p className="text-center">By purchasing and using mspaint products, you agree to the following Terms of Service. Violating any of these terms will result in <strong>permanent blacklisting</strong> from all mspaint products.</p>
+                    <p className="text-center">Ao comprar e usar produtos MsDoors, você concorda com os seguintes Termos de Serviço. A violação de qualquer um desses termos resultará em <strong>banimento permanente</strong> de todos os produtos MsDoors.</p>
 
-                    {/* Usage and Distribution */}
-                    <h2 className="text-2xl font-bold flex flex-col mt-6"><strong>Usage and Distribution</strong></h2>
+                    {/* Uso e Distribuição */}
+                    <h2 className="text-2xl font-bold flex flex-col mt-6"><strong>Uso e Distribuição</strong></h2>
                     <div className="flex flex-col *:ml-5">
-                        <p>- <strong>No Resale</strong>: You may not resell any mspaint product(s) without express permission.</p>
-                        <p>- <strong>No Paywalling</strong>: You are prohibited from placing any mspaint product(s) behind a paywall or charging others for access to our products.</p>
-                        <p>- <strong>No Key Sharing</strong>: Do not share your license keys with others.</p>
-                        <p>- <strong>No Key System Bypass</strong>: Bypassing or attempting to bypass our key system is strictly prohibited.</p>
+                        <p>- <strong>Proibido Revender</strong>: Você não pode revender qualquer produto MsDoors sem permissão expressa.</p>
+                        <p>- <strong>Proibido Colocar Atrás de Paywall</strong>: Você está proibido de colocar qualquer produto MsDoors atrás de um paywall ou cobrar outros pelo acesso aos nossos produtos.</p>
+                        <p>- <strong>Proibido Compartilhar Chaves</strong>: Não compartilhe suas chaves de licença com outras pessoas.</p>
+                        <p>- <strong>Proibido Burlar o Sistema de Chaves</strong>: Burlar ou tentar burlar nosso sistema de chaves é estritamente proibido.</p>
                     </div>
                 
-                    {/* Refunds and Chargebacks */}
-                    <h2 className="text-2xl font-bold flex flex-col mt-6"><strong>Refunds and Chargebacks</strong></h2>
+                    {/* Reembolsos e Estornos */}
+                    <h2 className="text-2xl font-bold flex flex-col mt-6"><strong>Reembolsos e Estornos</strong></h2>
                     <div className="flex flex-col *:ml-5">
-                        <p>- <strong>Final Sales</strong>: All purchases are <strong>final</strong>. <code>mspaint does not offer refunds for any reason.</code></p>
-                        <p>- <strong>No Chargebacks</strong>: Chargebacks are not permitted under any circumstances. <strong>Initiating a chargeback will lead to a permanent ban.</strong></p>
+                        <p>- <strong>Vendas Finais</strong>: Todas as compras são <strong>finais</strong>. <code>MsDoors não oferece reembolsos por qualquer motivo.</code></p>
+                        <p>- <strong>Proibido Estornar</strong>: Estornos não são permitidos sob nenhuma circunstância. <strong>Iniciar um estorno resultará em banimento permanente.</strong></p>
                     </div>
 
-                    {/* Tampering and Security */}
-                    <h2 className="text-2xl font-bold flex flex-col mt-6"><strong>Tampering and Security</strong></h2>
+                    {/* Alteração e Segurança */}
+                    <h2 className="text-2xl font-bold flex flex-col mt-6"><strong>posso ajudar na criação?</strong></h2>
                     <div className="flex flex-col *:ml-5">
-                        <p>- <strong>No Tampering or Cracking</strong>: You may not deobfuscate, reverse-engineer, tamper with, or crack mspaint products. Any attempt to modify or bypass product protections is strictly prohibited.</p>
+                        <p>- <strong>Sim, você pode me ajudar com a criação do Msdoors, basta vir dm mo Discord, mas lembre-se! eu não sei nada sobre lua(uso GEPET).</p>
                     </div>
 
-                    <p className="text-center text-bold mt-5">Violation of any of these terms will result in a permanent ban from all current and future mspaint products.</p>
+                    <p className="text-center text-bold mt-5">A violação de qualquer um desses termos resultará em banimento permanente de todos os produtos atuais e futuros da MsDoors.</p>
                 </BlurFade>
             </div>
         </main>
