@@ -25,7 +25,7 @@ function ClaimedPage() {
                 className="absolute left-0 top-0 z-30 size-full pointer-events-none"
             />
             <div className="w-full h-screen flex flex-col justify-center items-center">
-                <Link href={"https://discord.gg/mspaint"} target="_blank">
+                <Link href={"https://dsc.gg/msdoors-gg"} target="_blank">
                     <div className="flex mb-2">
                     <div
                         className={cn(
@@ -33,7 +33,7 @@ function ClaimedPage() {
                         )}
                     >
                         <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                        <DiscordLogoIcon className="mr-2" /><span>join mspaint discord</span>
+                        <DiscordLogoIcon className="mr-2" /><span>join msdoors discord</span>
                         <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                         </AnimatedShinyText>
                     </div>
@@ -41,9 +41,9 @@ function ClaimedPage() {
                 </Link>
                 <Card className="max-w-[475px]">
                     <CardHeader>
-                        <CardTitle>mspaint key purchase successful!</CardTitle>
+                        <CardTitle>msdoors adquirido!</CardTitle>
                         <CardDescription>
-                            Thank you for your support! without you we wouldn&apos;t be able to keep mspaint running.
+                            Obrigado pelo seu apoio! Sem você não seríamos capazes de manter o Msdoors funcionando.(Conseguiria sim)
                         </CardDescription>
                     </CardHeader>
 
@@ -55,7 +55,7 @@ function ClaimedPage() {
 							theme={nord}
 						/>
 
-                        <CopyButton text={`getgenv().script_key="${key}"\nloadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/002c19202c9946e6047b0c6e0ad51f84.lua"))()`} />
+                        <CopyButton text={`getgenv().script_key="${key}"\nloadstring(game:HttpGet("https://raw.githubusercontent.com/Sc-Rhyan57/Msdoors/refs/heads/main/download/main.lua"))()"))()`} />
                     </CardFooter>
                 </Card>
             </div>
