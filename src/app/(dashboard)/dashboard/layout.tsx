@@ -6,7 +6,7 @@ import { maskEmail } from "@/server/stringutil";
 import { Metadata, Viewport } from "next";
 import { notFound, redirect } from "next/navigation";
 
-const description = "mspaint is the best free roblox script hub supporting games such as doors, 3008, room & doors, pressure, fisch and build a boat for treasure";
+const description = "msdoors é um script simples para jogos do Roblox como portas, Natural Disaster dentre outros. OBS: ESTÁ EM ALPHA!";
 
 export const metadata: Metadata = {
   title: {
@@ -22,19 +22,13 @@ export const metadata: Metadata = {
   },
   openGraph: {
     description: description,
-		images: 'https://www.mspaint.cc/icon.png',
+		images: 'https://raw.githubusercontent.com/Msdoors/Msdoors.gg/refs/heads/main/imagens/web/favcon-no.png',
 	},
   keywords: [
-    "mspaint",
+    "msdoors",
     "roblox",
     "script",
     "doors",
-    "3008",
-    "room & doors",
-    "r&d",
-    "pressure",
-    "fisch",
-    "babft",
   ],
 };
 
