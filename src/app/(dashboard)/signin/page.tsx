@@ -23,7 +23,7 @@ export default async function SignInPage() {
                 </p>
             ) : <p>Not logged in</p>}
 
-            {allowed && <Link href="/dashboard">Go to dashboard</Link>}
+            {allowed && <Link href="/dashboard">Vá para Dashboarf</Link>}
         </>
     )
 }
