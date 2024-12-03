@@ -200,13 +200,15 @@ export default async function Home() {
           </h1>
           <p className="text-muted-foreground">O FAQ completo está no Discord</p>
         </BlurFade>
-
+        
+${Object.keys(languageData).length - 1}
+        
         <BlurFade delay={0.2 + (4 * 0.05)} inView>
           <Accordion type="single" collapsible className="max-w-[1000px] w-[50vw] max-md:w-[75vw]">
             <AccordionItem value="item-1">
               <AccordionTrigger>How do i do the keysystem?</AccordionTrigger>
               <AccordionContent>
-                Tutorial on how to use the Key System is here: <Link href={"https://docs.upio.dev/mspaint/key-system"} target="_blank" className="text-blue-300 underline">https://docs.upio.dev/mspaint/key-system</Link>.
+                Não teremos sistema de key nunca!
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
