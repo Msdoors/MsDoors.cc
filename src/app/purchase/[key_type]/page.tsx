@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation"
 
 const products = {
-    "lifetime": "https://mspaint.sell.app/product/mspaint-lifetime-key?store=mspaint&quantity=1&data=faq"
+    "lifetime-free: "https://dsc.gg/msdoors-gg"
 }
 
 export default function Page({ params }: { params: { key_type: string } }) {
