@@ -148,7 +148,7 @@ export default async function Home() {
       </div>
       
       <div className="flex flex-col items-center mb-[35vh] text-center overflow-hidden max-h-[30rem] relative">
-        <WordFadeIn className="text-3xl md:text-3xl" words={`Msdoors está disponível no mundo todo!`} inView />
+        <WordFadeIn className="text-3xl md:text-3xl" words={`Msdoors está disponível para mais de ${Object.keys(languageData).length - 1} países! `} inView />
         <BlurFade delay={0.2 + (1 * 0.05)} inView>
           <WordFadeIn className="text-xl md:text-xl font-normal" words={`Isao significa que pode ser executado em qualquer lugar!`} inView initialDelay={0.15 * 6} delay={0.25} />
         </BlurFade>
