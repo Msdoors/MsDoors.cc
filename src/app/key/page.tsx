@@ -27,11 +27,11 @@ export default function Page() {
                     <BlurFade delay={0.2 + (1 * 0.05)} inView>
                         <Card className="w-[350px]">
                             <CardHeader>
-                                <CardTitle>mspaint Key System</CardTitle>
+                                <CardTitle>msdoors Key System</CardTitle>
                             </CardHeader>
                             <CardFooter className="flex justify-center">
-                                <Link href={"https://ads.luarmor.net/get_key?for=mspaint_key-rXJfopyAkrky"}>
-                                    <Button className="mr-2">Linkvertise <Image className="ml-2" src="/icons/linkvertise.png" width={25} height={25} alt="Linkvertise" /></Button>
+                                <Link href={"https://dsc.gg/msdoors-gg"}>
+                                    <Button className="mr-2">Discord(NO KEY) <Image className="ml-2" src="/icons/Discord.png" width={25} height={25} alt="Discord" /></Button>
                                 </Link>
 
                                 <Link href={""}>
