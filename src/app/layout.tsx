@@ -5,31 +5,25 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner"
 import { Analytics } from "@vercel/analytics/react"
 
-const description = "mspaint is the best free roblox script hub supporting games such as doors, 3008, room & doors, pressure, fisch, build a boat for treasure and grace";
+const description = "mspaint é um hub simples para roblox com suporte para diversos jogos.";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: {
-    default: "mspaint",
-    template: "%s | mspaint",
+    default: "msdoors",
+    template: "%s | msdoors",
   },
   description: description,
   openGraph: {
     description: description,
-		images: 'https://www.mspaint.cc/icon.png',
+		images: 'https://raw.githubusercontent.com/Msdoors/Msdoors.gg/refs/heads/main/imagens/web/favcon-no.png',
 	},
   keywords: [
-    "mspaint",
+    "msdoors",
     "roblox",
     "script",
     "doors",
-    "3008",
-    "room & doors",
-    "r&d",
-    "pressure",
-    "fisch",
-    "babft",
-    "grace"
+    "e mais...",
   ],
 };
 
