@@ -22,17 +22,17 @@ import {
 const data = {
   navMain: [
     {
-      title: "Serials",
+      title: "Seriados",
       url: "#",
       icon: FolderKeyIcon,
       isActive: true,
       items: [
         {
-          title: "Create Serial",
+          title: "Criar série",
           url: "/dashboard/serials/create",
         },
         {
-          title: "Modify Serial",
+          title: "Modificar Serial",
           url: "/dashboard/serials/modify",
         }
       ],
@@ -56,7 +56,7 @@ export function AppSidebar({ session_data }: { session_data: {
                   <Image src={"/icon.png"} alt="mspaint logo" width={256} height={256} className="size-6" />
                 </div>
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-semibold">mspaint</span>
+                  <span className="truncate font-semibold">Msdoors</span>
                   <span className="truncate text-xs">dashboard</span>
                 </div>
               </a>
