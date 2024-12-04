@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner"
 import { Analytics } from "@vercel/analytics/react"
 
-const description = "mspaint é um hub simples para roblox com suporte para diversos jogos.";
+const description = "msdoors é um hub simples para roblox com suporte para diversos jogos.";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
