@@ -80,6 +80,7 @@ export default async function Home() {
                       "NATURAL DISASTER",
                       "CAMPOS DE ARMAS[FFA]",
                       "CARRINHO + CART",
+                      "RACE CLICKER",
                     ]}
                   />{" "}
                 </div>
